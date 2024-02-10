@@ -31,6 +31,8 @@ public class LoginUserCaseImpl implements LoginUseCase {
         }
         LoginUserResponseDTO loginUserResponseDTO = new LoginUserResponseDTO();
         loginUserResponseDTO.setAuth(true);
+        loginUserResponseDTO.setIdRule(user.getRule().getId());
+        loginUserResponseDTO.setIdUser(user.getId());
         return loginUserResponseDTO;
     }
 

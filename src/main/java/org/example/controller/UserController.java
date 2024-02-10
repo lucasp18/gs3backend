@@ -15,6 +15,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+@CrossOrigin("http://localhost:4200")
 public class UserController {
 
     @Autowired
@@ -32,6 +33,11 @@ public class UserController {
     @GetMapping("/user")
     public List<User> all() {
         return userRepository.findAll();
+    }
+
+    @GetMapping("/user/{idUser}")
+    public User user(@PathVariable Long idUser) {
+        return userRepository.findById(idUser).orElseThrow(()-> new RuntimeException("Não existe usuário"));
     }
 
     @PostMapping("/user")
