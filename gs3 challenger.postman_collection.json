@@ -185,6 +185,33 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/1?auth=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1"
+					],
+					"query": [
+						{
+							"key": "auth",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -5,3 +5,5 @@ Banco de dados em memoria.
 Esta api possuí uma collection para testes na raiz do projeto.
 
 Para executar o projeto basta importar no intellij e executar o play e o projeto deve subir na porta configurada.
+
+No start da aplicação é criado um usuario ADMIN com senha 123
